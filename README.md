@@ -110,7 +110,7 @@ ffmpeg -loglevel warning -r 48 -fflags nobuffer -i "tcp://192.168.1.252:9000?lis
 | `-c:a copy`           | Just copy the audio stream as is.  No decoding necessary. |
 | `-bsf:a aac_adtstoasc`              | Or so we thought.  mpegts container requires we do a bit of work on our audio before sending it  |
 | `-flvflags no_duration_filesize`              | Remove unnecessary header info to cleanup debug logs a bit  |
-| `-f flv " rtmp://{ingest}.contribute.live-video.net/app/{stream_key}` | Send our output to a Twitch ingest server.  https://stream.twitch.tv/ingests/  This is also where your stream key goes.  |
+| `-f flv "rtmp://{ingest}.contribute.live-video.net/app/{stream_key}` | Send our output to a Twitch ingest server.  https://stream.twitch.tv/ingests/  This is also where your stream key goes.  |
 
 
 #### Main Rig OBS Setup
